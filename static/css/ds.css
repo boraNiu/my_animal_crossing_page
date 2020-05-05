@@ -46,6 +46,16 @@ main {
     text-align: center
 }
 
+.villagerPicture {
+    height: 60px;
+    width: 40px;
+}
+
+.villagerName {
+    width: 40px;
+    font-size: 14px;
+}
+
 #log {
     padding: 20px;
 }

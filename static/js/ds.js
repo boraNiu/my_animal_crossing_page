@@ -17,4 +17,19 @@ function getData(pageName, buttonName) {
         page.innerHTML = '';
         button.innerHTML = '显示';
     };
+    if (buttonName == 'bn-2') {
+        createVillagerPictureURL()
+    }
+}
+
+function createVillagerPictureURL() {
+    // let trCount = 9;
+    var trCount = document.getElementByClassName('villagerPictures');
+    console.log(trCount.length);
+    for (i=1; i <= 9; i++) {
+        console.log(document.getElementById(`villager-${i}`).innerHTML);
+        let villagerName = document.getElementById(`villager-${i}`).innerHTML;
+        let url = "https://mori.wiki/images/4/4b/"+escape(villagerName)+".png";
+        document.getElementById(`villagerPicture-${i}`).src = url;
+    }
 }
