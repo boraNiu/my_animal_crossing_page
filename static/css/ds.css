@@ -1,0 +1,57 @@
+body {
+    width: 1200px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand {
+    text-align: center;
+    color: coral;
+    border:1px solid #00ff00;
+}
+
+.zone {
+    width: 45%;
+    flex:auto;
+    border:1px solid #ff0000;
+}
+
+.zone-name{
+    padding-left: 20px;
+}
+
+.zone-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.zone-content-left {
+    width: 45%;
+    flex: auto; 
+    display: inline-block;
+}
+
+.zone-content-right {
+    width: 35%;
+    flex:auto;
+}
+
+.beian {
+    margin: auto 0; 
+    text-align: center
+}
+
+#log {
+    padding: 20px;
+}
+
+.frameFloat {
+    position:fixed;
+    bottom:10px;
+    right:0px;
+}
